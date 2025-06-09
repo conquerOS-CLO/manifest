@@ -5,6 +5,10 @@
            fetch="https://github.com/ConquerOS/"
            revision="eleven"/>
 
+  <remote  name="conquer-fork"
+           fetch="https://github.com/ConquerOS-CLO/"
+           revision="eleven"/>
+
   <remote  name="conquer-gitlab"
            fetch="https://gitlab.com/ConquerOS/"
            revision="eleven"/>

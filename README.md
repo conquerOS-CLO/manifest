@@ -1,7 +1,7 @@
 ![ConquerOS](https://raw.githubusercontent.com/ConquerOS/manifest/eleven/banner.png)
 
 # ConquerOS 4.X Raven [![Download ConquerOS](https://img.shields.io/sourceforge/dt/conqueros.svg)](https://sourceforge.net/projects/conqueros/files/latest/download)  [![Download ConquerOS](https://img.shields.io/sourceforge/dm/conqueros.svg)](https://sourceforge.net/projects/conqueros/files/latest/download)  
-ConquerOS is a simple CAF Based Custom ROM with additional features and UI/UX improvement to give user good experience when using it.
+ConquerOS is a simple CLO Based Custom ROM with additional features and UI/UX improvement to give user good experience when using it.
 
 ## Building ConquerOS
 
@@ -23,12 +23,12 @@ Now, let's Download ConquerOS Source
 
 - Second, initialize ConquerOS Source manifest in the directory
 ```
- repo init -u git://github.com/ConquerOS/manifest.git -b eleven
+ repo init -u git@github.com:ConquerOS-CLO/manifest.git -b eleven
 ```
 
 - Just in case you just want save more space and data, you can use command below
 ```
- repo init --depth=1 -u git://github.com/ConquerOS/manifest.git -b eleven
+ repo init --depth=1 -u git@github.com:ConquerOS-CLO/manifest.git -b eleven
 ```
 
 - Third, start downloading the ConquerOS Source.
