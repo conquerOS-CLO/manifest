@@ -19,7 +19,7 @@
 
   <!-- build -->
   <remove-project name="platform/build"/>
-  <project path="build/make" name="build_make" remote="conquer" >
+  <project path="build/make" name="build_make" remote="conquer-fork" >
 	   <copyfile src="core/root.mk" dest="Makefile"/>
 	   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
 	   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
@@ -30,10 +30,10 @@
   </project>
 
   <remove-project name="platform/build/blueprint"/>
-  <project path="build/blueprint" name="build_blueprint" remote="conquer"/>
+  <project path="build/blueprint" name="build_blueprint" remote="conquer-fork"/>
 
   <remove-project name="platform/build/soong"/>
-  <project path="build/soong" name="build_soong" remote="conquer" >
+  <project path="build/soong" name="build_soong" remote="conquer-fork" >
 	   <linkfile src="root.bp" dest="Android.bp"/>
 	   <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
   </project>
@@ -43,7 +43,7 @@
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="conquer"/>
 
   <remove-project name="platform/external/cldr"/>
-  <project path="external/cldr" name="external_cldr" remote="conquer" clone-depth="1"/>
+  <project path="external/cldr" name="external_cldr" remote="conquer-fork" clone-depth="1"/>
 
   <project path="external/exfat" name="PixelExperience/external_exfat" remote="github" revision="eleven"/>
 
@@ -51,52 +51,52 @@
   <project path="external/jemalloc_new" name="external_jemalloc_new" remote="conquer"/>
 
   <remove-project name="platform/external/icu"/>
-  <project path="external/icu" name="external_icu" remote="conquer" clone-depth="1"/>
+  <project path="external/icu" name="external_icu" remote="conquer-fork" clone-depth="1"/>
 
   <remove-project name="platform/external/iptables"/>
-  <project path="external/iptables" name="external_iptables" remote="conquer"/>
+  <project path="external/iptables" name="external_iptables" remote="conquer-fork"/>
 
   <remove-project name="platform/external/libcxx"/>
-  <project path="external/libcxx" name="external_libcxx" remote="conquer"/>
+  <project path="external/libcxx" name="external_libcxx" remote="conquer-fork"/>
 
   <remove-project name="platform/external/libpng"/>
-  <project path="external/libpng" name="external_libpng" remote="conquer"/>
+  <project path="external/libpng" name="external_libpng" remote="conquer-fork"/>
 
   <remove-project name="platform/external/openssh"/>
   <project path="external/openssh" name="external_openssh" remote="conquer"/>
 
   <remove-project name="platform/external/scudo"/>
-  <project path="external/scudo" name="external_scudo" remote="conquer"/>
+  <project path="external/scudo" name="external_scudo" remote="conquer-fork"/>
 
   <remove-project name="platform/external/sqlite"/>
   <project path="external/sqlite" name="external_sqlite" remote="conquer"/>
 
   <remove-project name="platform/external/tinycompress"/>
-  <project path="external/tinycompress" name="external_tinycompress" remote="conquer"/>
+  <project path="external/tinycompress" name="external_tinycompress" remote="conquer-fork"/>
 
   <remove-project name="platform/external/zlib"/>
-  <project path="external/zlib" name="external_zlib" remote="conquer"/>
+  <project path="external/zlib" name="external_zlib" remote="conquer-fork"/>
 
   <project path="external/faceunlock" name="external_faceunlock" remote="conquer-gitlab"/>
 
   <!-- frameworks -->
   <remove-project name="platform/frameworks/av"/>
-  <project path="frameworks/av" name="frameworks_av" remote="conquer"/>
+  <project path="frameworks/av" name="frameworks_av" remote="conquer-fork"/>
 
   <remove-project name="platform/frameworks/base"/>
-  <project path="frameworks/base" name="frameworks_base" remote="conquer"/>
+  <project path="frameworks/base" name="frameworks_base" remote="conquer-fork"/>
 
   <remove-project name="platform/frameworks/native"/>
-  <project path="frameworks/native" name="frameworks_native" remote="conquer"/>
+  <project path="frameworks/native" name="frameworks_native" remote="conquer-fork"/>
 
   <remove-project name="platform/frameworks/opt/net/wifi"/>
-  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="conquer"/>
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="conquer-fork"/>
 
   <remove-project name="platform/frameworks/opt/telephony"/>
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="conquer"/>
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="conquer-fork"/>
 
   <remove-project name="platform/frameworks/opt/timezonepicker"/>
-  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="conquer"/>
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="conquer-fork"/>
 
   <!-- HALs -->
   <project path="hardware/qcom/bootctrl" name="hardware_qcom_bootctrl" remote="conquer"/>
@@ -114,7 +114,7 @@
   <project path="hardware/conquer/interfaces" name="hardware_conquer_interfaces" remote="conquer"/>
 
   <remove-project name="platform/hardware/interfaces"/>
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="conquer"/>
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="conquer-fork"/>
 
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" remote="conquer"/>
 
@@ -129,10 +129,10 @@
 
   <!-- general repos -->
   <remove-project name="platform/art"/>
-  <project path="art" name="art" remote="conquer"/>
+  <project path="art" name="art" remote="conquer-fork"/>
 
   <remove-project name="platform/bionic"/>
-  <project path="bionic" name="bionic" remote="conquer"/>
+  <project path="bionic" name="bionic" remote="conquer-fork"/>
 
   <remove-project name="platform/bootable/recovery"/>
   <project path="bootable/recovery" name="bootable_recovery" remote="conquer"/>
@@ -142,29 +142,29 @@
   <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="conquer"/>
 
   <remove-project name="platform/external/json-c"/>
-  <project path="external/json-c" name="external_json-c" remote="conquer"/>
+  <project path="external/json-c" name="external_json-c" remote="conquer-fork"/>
 
   <remove-project name="platform/external/wpa_supplicant_8"/>
-  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="conquer"/>
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="conquer-fork"/>
 
   <remove-project name="platform/libcore"/>
   <project path="libcore" name="libcore" remote="conquer"/>
 
   <remove-project name="platform/packages/providers/ContactsProvider"/>
-  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="conquer"/>
+  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="conquer-fork"/>
 
   <remove-project name="platform/packages/services/Telephony"/>
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="conquer"/>
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="conquer-fork"/>
 
   <!-- packages/apps -->
   <remove-project name="platform/packages/apps/Bluetooth"/>
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="conquer"/>
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="conquer-fork"/>
 
   <remove-project name="platform/packages/apps/Camera2"/>
   <project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="conquer"/>
 
   <remove-project name="platform/packages/apps/CellBroadcastReceiver"/>
-  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="conquer"/>
+  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="conquer-fork"/>
 
   <remove-project name="platform/packages/apps/Contacts"/>
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="conquer"/>
@@ -190,10 +190,10 @@
   <project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="conquer"/>
 
   <remove-project name="platform/packages/apps/Settings"/>
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="conquer"/>
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="conquer-fork"/>
 
   <remove-project name="platform/packages/apps/SettingsIntelligence"/>
-  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="conquer"/>
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="conquer-fork"/>
 
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="conquer"/>
 
@@ -226,23 +226,23 @@
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="conquer"/>
 
   <remove-project name="platform/system/sepolicy"/>
-  <project path="system/sepolicy" name="system_sepolicy" remote="conquer"/>
+  <project path="system/sepolicy" name="system_sepolicy" remote="conquer-fork"/>
 
   <!-- system repos -->
   <remove-project name="platform/system/bt"/>
-  <project path="system/bt" name="system_bt" remote="conquer"/>
+  <project path="system/bt" name="system_bt" remote="conquer-fork"/>
 
   <remove-project name="platform/system/core"/>
-  <project path="system/core" name="system_core" remote="conquer"/>
+  <project path="system/core" name="system_core" remote="conquer-fork"/>
 
   <remove-project name="platform/system/extras"/>
-  <project path="system/extras" name="system_extras" remote="conquer"/>
+  <project path="system/extras" name="system_extras" remote="conquer-fork"/>
 
   <remove-project name="platform/system/libhwbinder"/>
   <project path="system/libhwbinder" name="system_libhwbinder" remote="conquer"/>
 
   <remove-project name="platform/system/libufdt"/>
-  <project path="system/libufdt" name="system_libufdt" remote="conquer"/>
+  <project path="system/libufdt" name="system_libufdt" remote="conquer-fork"/>
 
   <remove-project name="platform/system/memory/lmkd"/>
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="conquer"/>
@@ -251,13 +251,13 @@
   <project path="system/netd" name="system_netd" remote="conquer"/>
 
   <remove-project name="platform/system/timezone"/>
-  <project path="system/timezone" name="system_timezone" remote="conquer"/>
+  <project path="system/timezone" name="system_timezone" remote="conquer-fork"/>
 
   <remove-project name="platform/system/update_engine"/>
-  <project path="system/update_engine" name="system_update_engine" remote="conquer"/>
+  <project path="system/update_engine" name="system_update_engine" remote="conquer-fork"/>
 
   <remove-project name="platform/system/vold"/>
-  <project path="system/vold" name="system_vold" remote="conquer"/>
+  <project path="system/vold" name="system_vold" remote="conquer-fork"/>
 
   <!-- vendor repos -->
   <project path="vendor/conquer" name="vendor_conquer" remote="conquer"/>
