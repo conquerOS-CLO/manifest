@@ -109,6 +109,7 @@
 
   <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="lineage"/>
 
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="lineage"/>
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="lineage"/>
 
   <remove-project name="platform/vendor/qcom-opensource/wfd-commonsys"/>
