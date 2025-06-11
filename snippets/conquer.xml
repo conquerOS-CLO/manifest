@@ -260,7 +260,7 @@
   <project path="system/vold" name="system_vold" remote="conquer-fork"/>
 
   <!-- vendor repos -->
-  <project path="vendor/conquer" name="vendor_conquer" remote="conquer"/>
+  <project path="vendor/conquer" name="vendor_conquer" remote="conquer-fork"/>
   <project path="vendor/conquerui" name="vendor_conquerui" remote="conquer"/>
   <project path="vendor/google/gms" name="blobs/vendor_google_gms" remote="conquer-gitlab" clone-depth="1"/>
   <project path="vendor/google/pixel" name="vendor_google_pixel" remote="conquer"/>
